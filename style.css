@@ -1,0 +1,70 @@
+body{
+  background: hsl(210, 30%, 15%); /* Very dark blue-gray */
+  color: hsl(210, 10%, 95%); /* Light text */
+    /* color: green; */
+  }
+  .container{
+    max-width: 400px;
+  }
+  input[type=text],
+  input[type=text]:focus{
+    /* color: #fff; */
+    border: none;
+    /* background: rgba(0,0,0,0.2); */
+    background: hsl(210, 30%, 20%); /* Dark gray input background */
+    color: hsl(210, 10%, 95%); /* Light input text */
+    max-width: 400px;
+  }
+  
+  .button {
+    /* background: #423a6f; */
+    background: hsl(162, 80%, 45%); /* Vibrant teal */
+    color: hsl(0, 0%, 100%); /* White text */
+    /* color: #fff; */
+  }
+  
+  .button:hover {
+    opacity: 0.9; /* Slightly increase opacity on hover */
+    background: hsl(162, 80%, 35%); /* Darker teal for hover */
+    /* color: #fff; */
+    /* color: green; */
+  }
+  
+  .todos li{
+    /* background: #423a6f; */
+    background: hsl(162, 80%, 25%); /* Dark teal for list items */
+    color: hsl(210, 10%, 95%); /* Light text in list items */
+
+  }
+  .todos li span {
+    flex-grow: 1;
+  }
+  .delete{
+    cursor: pointer;
+    margin-left: 15px;
+    color: hsl(0, 100%, 50%); /* Red color for delete */
+
+  }
+  .fa-edit {
+    cursor: pointer;
+    color: hsl(39, 100%, 50%); /* Orange color for edit */
+
+  }
+  .filtered{
+    display: none !important;
+  }
+  .complete {
+    color: hsl(120, 100%, 50%); /* Green for completed */
+    font-weight: bold;
+  } 
+  .complete::after {
+    content: 'Completed';
+    margin-left: 5px;
+    color: hsl(120, 100%, 70%); /* Lighter green for completed text */
+  }
+
+  .teal {
+    background: rgba(0, 0, 0, 0.3); /* Slightly darker teal for special elements */
+    color: hsl(210, 10%, 95%); /* Light text */
+    font-family: monospace;
+  }
